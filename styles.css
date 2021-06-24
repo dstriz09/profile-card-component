@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  font-size: 62.5%;
+  font-family: "Kumbh Sans", sans-serif;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(185, 75%, 39%);
+}
+
+.background-top {
+  width: 980px;
+  height: 980px;
+  position: absolute;
+  background-image: url("./images/bg-pattern-top.svg");
+  background-repeat: no-repeat;
+  right: 50%;
+  top: -50%;
+}
+
+.background-bottom {
+  width: 980px;
+  height: 980px;
+  position: absolute;
+  background-image: url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  left: 50%;
+  bottom: -50%;
+}
+
+main {
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+  width: 350px;
+  position: relative;
+}
+
+.profile-picture {
+  position: absolute;
+  top: -53px;
+  left: 50%;
+  border-radius: 50%;
+  border: 0.5rem solid white;
+  transform: translateX(-50%);
+}
+
+.pattern {
+  display: block;
+  border-radius: 15px 15px 0 0;
+}
+
+.description {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 8rem;
+}
+
+.age {
+  color: hsl(0, 0%, 59%);
+  padding-left: 1rem;
+}
+
+.city {
+  text-align: center;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 59%);
+  margin: 1.5rem 0 2.4rem;
+}
+
+.stats-container {
+  display: flex;
+  padding: 0 2rem;
+  border-top: 1.5px solid rgba(201, 196, 196, 0.5);
+}
+
+.stat {
+  padding: 3rem 0;
+  flex: 0 0 33%;
+}
+
+.stat h3 {
+  text-align: center;
+  padding-bottom: 0.8rem;
+  font-size: 1.7rem;
+}
+
+.stat p {
+  color: hsl(0, 0%, 59%);
+  font-size: 1.1rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
